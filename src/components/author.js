@@ -123,10 +123,10 @@ function Author (){
             {(exist_result)?
             <div class="pagination_flex">
                 {(page > 0)?
-                   <p onClick={handlePreviousPage} id="previous_page_link">Previous</p>
+                   <div id="previous_page_link"><p onClick={handlePreviousPage}>Previous</p></div>
                 :<span>   </span>}
                 {(page+15 < total_number)?
-                   <p href="#header_part"onClick={handleNextPage} id="next_page_link">Next</p>
+                    <div id="next_page_link"><p href="#header_part"onClick={handleNextPage}>Next</p></div>
                 :<span>   </span>}
             </div>
             :""

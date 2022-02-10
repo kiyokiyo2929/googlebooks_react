@@ -124,6 +124,7 @@ code {
 
 #result_list {
   width: 18vw;
+  margin-bottom: 3vh;
 }
 
 #result_list_data p,
@@ -144,7 +145,6 @@ code {
   position: absolute;
   top: 40%;
   left: 28%;
-  color: red;
   display: flex;
   justify-content: center;
   color: white;
@@ -165,21 +165,35 @@ code {
 }
 
 .pagination_flex p {
-  border: 1px solid black;
-  border-radius: 3px;
   font-size: 15px;
   font-weight: bold;
-  padding: 2px 10px;
+}
+
+.pagination_flex div {
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 5vh;
+  padding: 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination_flex div:hover {
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 3px;
+  height: 5vh;
+  padding: 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination_flex p:hover {
-  border: 1px solid black;
-  background-color: black;
-  color: white;
-  border-radius: 3px;
   font-size: 15px;
   font-weight: bold;
-  padding: 2px 10px;
+  color: white;
 }
 
 #next_page_link,
@@ -190,4 +204,92 @@ code {
 
 #previous_page_link {
   margin-right: 10px;
+}
+
+/* mobile page design */
+@media screen and (max-width: 767px) {
+  /* header */
+
+  #header_part {
+    height: 10vh;
+  }
+
+  /* form */
+  #form_result_part {
+    position: fixed;
+    top: 10vh;
+    background-color: white;
+    z-index: 1;
+  }
+
+  /* result */
+  .search_result {
+    display: flex;
+    /* display: block; */
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-end; */
+  }
+
+  #search_keyword {
+    margin-right: 0px;
+  }
+
+  /* list */
+
+  #list_part {
+    height: 80vh;
+    overflow: scroll;
+    position: relative;
+    top: 35vh;
+  }
+
+  /* item */
+  #result_list {
+    width: 38vw;
+    margin-bottom: 3vh;
+  }
+  #no_cover,
+  #cover {
+    width: 30vw;
+    height: 30vh;
+  }
+
+  .img_wrapper p {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  /* pagination */
+
+  .pagination_flex div {
+    height: 5vh;
+    padding: 1px 5px;
+  }
+
+  .pagination_flex div:hover {
+    border-radius: 3px;
+    height: 5vh;
+    padding: 1px 5px;
+  }
+
+  #next_page_link,
+  #previous_page_link {
+    width: 15vw;
+  }
+
+  .pagination_flex p {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .pagination_flex p:hover {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
 }
