@@ -110,9 +110,9 @@ code {
 
 #list_part {
   height: 80vh;
-  overflow: scroll;
+  /* overflow: scroll; */
   position: relative;
-  top: 20vh;
+  top: 25vh;
   z-index: 0;
 }
 
@@ -200,10 +200,19 @@ code {
 #previous_page_link {
   cursor: pointer;
   width: 5vw;
+  text-decoration: none;
 }
 
 #previous_page_link {
   margin-right: 10px;
+}
+
+.hash_link {
+  text-decoration: none;
+}
+
+.hash_link p {
+  color: black;
 }
 
 /* mobile page design */
@@ -259,7 +268,7 @@ code {
     position: absolute;
     top: 35%;
     left: 20%;
-    display: flex;
+    vertical-align: middle;
     justify-content: center;
     color: white;
   }

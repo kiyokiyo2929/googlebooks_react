@@ -1,5 +1,7 @@
 import axios from 'axios';
 import React, {useState} from 'react';
+import { HashLink } from 'react-router-hash-link';
+
 
 function Author (){
     const [valueTag, setValueTag] = useState("");
@@ -42,6 +44,7 @@ function Author (){
         axios.get(next_url_set)
         .then(response=>{
             setList_data(response.data.items);
+            setTotal_Number(response.data.totalItems);
             let maxPage_link = max_number_onPage+15;
             (response.data.totalItems < max_number_onPage+15)? setMax_number_onPage(response.data.totalItems) : setMax_number_onPage (maxPage_link);
             let nextpage_number =  page + 15;
@@ -123,10 +126,10 @@ function Author (){
             {(exist_result)?
             <div class="pagination_flex">
                 {(page > 0)?
-                   <div id="previous_page_link"><p onClick={handlePreviousPage}>Previous</p></div>
+                   <div id="previous_page_link"><HashLink to="#list_part" onClick={handlePreviousPage} class="hash_link"><p>Previous</p></HashLink></div>
                 :<span>   </span>}
                 {(page+15 < total_number)?
-                    <div id="next_page_link"><p href="#header_part"onClick={handleNextPage}>Next</p></div>
+                    <div id="next_page_link"><HashLink to="#list_part" onClick={handleNextPage} class="hash_link" ><p>Next</p></HashLink></div>
                 :<span>   </span>}
             </div>
             :""
