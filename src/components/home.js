@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
+
 function Home(){
     return(
         <div id="top">
-            <p>Find Nice Books</p>
+            <Link to="/author" id="top_link"><p>Find Nice Books</p></Link>
         </div>
        
     )

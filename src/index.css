@@ -40,6 +40,11 @@ code {
   animation-fill-mode: forwards;
 }
 
+#top_link {
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes top_effect {
   0% {
     opacity: 0;
