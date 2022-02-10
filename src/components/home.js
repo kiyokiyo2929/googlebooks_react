@@ -1,8 +1,7 @@
 function Home(){
     return(
-        <div>
-             <div>Kiyokiyo</div>
-             <p>Home Page</p>
+        <div id="top">
+            <p>Find Nice Books</p>
         </div>
        
     )

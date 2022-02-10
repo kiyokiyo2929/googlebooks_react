@@ -24,6 +24,31 @@ code {
   height: 95vh;
 }
 
+#top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 95vh;
+}
+
+#top p {
+  font-size: 10vw;
+  animation-name: top_effect;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes top_effect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* header */
 
 #header_part {
@@ -109,8 +134,7 @@ code {
 /* image and list */
 
 #list_part {
-  height: 80vh;
-  /* overflow: scroll; */
+  height: 70vh;
   position: relative;
   top: 25vh;
   z-index: 0;
