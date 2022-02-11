@@ -4,7 +4,7 @@ https://google-book-react-v1.herokuapp.com/
 
 TOP page
 
-![スクリーンショット 2022-02-11 11 16 00](https://user-images.githubusercontent.com/59493506/153574374-6c52b9c8-33f9-4550-8ec4-5caf86ce9ac6.jpg)
+![スクリーンショット 2022-02-11 11 19 03](https://user-images.githubusercontent.com/59493506/153574765-374ce19c-9254-4499-b8fc-eb71dc0fc2f7.jpg)
 
 Search Result page
 
