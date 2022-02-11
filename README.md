@@ -4,7 +4,7 @@ https://google-book-react-v1.herokuapp.com/
 
 TOP page
 
-<img width="1332" alt="スクリーンショット 2022-02-11 11 20 55" src="https://user-images.githubusercontent.com/59493506/153574990-111f8d1c-9ae3-481b-a7fb-37d3ed304265.png">
+![スクリーンショット 2022-02-11 11 20 55](https://user-images.githubusercontent.com/59493506/153575067-596a99ad-ff7d-445b-844f-c16e5ab6e3cc.jpg)
 
 
 Search Result page
